@@ -1,0 +1,320 @@
+
+.main-navbar {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo a {
+    font-family: 'Lobster', cursive; 
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-logo span { color: #FF4A4A; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover { color: #FF4A4A; }
+
+.nav-social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-social img {
+    width: 18px;
+    height: 25px;
+}
+
+.shared-newsletter {
+    padding: 80px 0;
+}
+
+.newsletter-card {
+    background-color: #E7F9FD; 
+    border-radius: 60px;
+    padding: 80px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.newsletter-content {
+    max-width: 620px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2; 
+}
+
+.newsletter-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #000;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    border: none;
+    padding: 10px 20px;
+    width: 70%;
+    outline: none;
+    font-size: 14px;
+}
+
+.newsletter-subscribe-btn {
+    background: #000;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-subscribe-btn:hover {
+    background: #FF4A4A;
+}
+
+.newsletter-img-left, .newsletter-img-right {
+    position: absolute;
+    bottom: 0;
+    height: 47%; 
+    z-index: 1;
+}
+
+.newsletter-img-left { left: 0; }
+.newsletter-img-right { right: 0; }
+
+@media (max-width: 768px) {
+    .newsletter-card { padding: 40px 20px; border-radius: 30px; }
+    .newsletter-content h2 { font-size: 32px; }
+    .newsletter-form { flex-direction: column; gap: 10px; background: transparent; padding: 0; }
+    .newsletter-form input { width: 100%; border-radius: 15px; padding: 18px; }
+    .newsletter-img-left, .newsletter-img-right { display: none; } /* حذف عکس‌ها در موبایل برای خوانایی */
+}
+
+.bp-recommendations {
+    padding: 80px 0;
+}
+
+.bp-container {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;  
+}
+
+.bp-rec-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.bp-recipe-grid {
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bp-recipe-card {
+    flex: 1; 
+    min-width: 0; 
+}
+
+.bp-card-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    aspect-ratio: 1 / 1; 
+}
+
+.bp-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bp-heart-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bp-heart-btn img {
+    width: 35px;
+    height: auto;
+}
+
+.bp-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.bp-card-meta {
+    display: flex;
+    gap: 15px;
+}
+
+.bp-card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+.bp-footer {
+    padding: 80px 0 40px;
+    margin-top: 50px;
+}
+
+.bp-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.bp-footer-logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.bp-footer-logo span { color: #FF4A4A; }
+
+.bp-footer-info p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.bp-footer-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.bp-footer-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.bp-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.bp-footer-bottom p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.red-text { color: #FF4A4A; }
+
+.bp-footer-social {
+    display: flex;
+    gap: 30px;
+}
+
+.bp-footer-social img {
+    width: 20px;
+    height: 23px;
+}
+
+@media (max-width: 992px) {
+    .bp-recipe-grid { flex-wrap: wrap; }
+    .bp-recipe-card { flex: 0 0 45%; }
+}
+
+.bp-carousel-controls{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.bp-prev,
+.bp-next{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:none;
+    background:#E7FAFE;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.bp-prev:hover,
+.bp-next:hover{
+    background:#000;
+    color:#fff;
+}
+
+/* واکنش‌گرا */
+@media (max-width:768px){
+
+    .bp-recipe-card{
+        min-width:calc(50% - 10px) !important;
+    }
+
+}

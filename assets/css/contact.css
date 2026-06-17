@@ -1,0 +1,125 @@
+.ct-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ct-contact-section {
+    padding: 80px 0;
+}
+
+.ct-main-title {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #000;
+}
+
+.ct-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.ct-image-wrapper {
+    flex: 1;
+    background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ct-chef-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ct-form-wrapper {
+    flex: 2;
+}
+
+.ct-form-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.ct-input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ct-input-group.full-width {
+    margin-bottom: 40px;
+}
+
+.ct-input-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.05em;
+}
+
+.ct-input-group input, 
+.ct-input-group select, 
+.ct-input-group textarea {
+    width: 100%;
+    padding: 18px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    font-size: 14px;
+    color: #000;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.ct-input-group input:focus, 
+.ct-input-group textarea:focus {
+    border-color: #FF4A4A;
+}
+
+.ct-input-group textarea {
+    height: 200px;
+    resize: none;
+}
+
+.ct-select-wrapper {
+    position: relative;
+}
+
+.ct-submit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 60px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.ct-submit-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    .ct-grid {
+        flex-direction: column;
+    }
+    .ct-form-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .ct-main-title {
+        font-size: 40px;
+    }
+}

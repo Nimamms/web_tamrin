@@ -1,0 +1,73 @@
+/* Reset ساده */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* تایپوگرافی پایه */
+html {
+  font-size: 16px;
+  .container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* تعریف فونت Inter */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Regular(1).ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-SemiBold(1).ttf') format('truetype');
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Bold(1).ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Black(1).ttf') format('truetype');
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2 {
+  font-weight: 900; /* Black */
+}
+
+h3, h4 {
+  font-weight: 700; /* Bold */
+}
+
+nav a {
+  font-weight: 600; /* SemiBold */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}

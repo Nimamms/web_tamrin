@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Foodieland</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css"> 
+    <link rel="stylesheet" href="assets/css/contact.css"> 
+    
+</head>
+<body>
+
+
+     <nav class="main-navbar">
+    <div class="nav-wrapper">
+        <div class="nav-logo">
+            <a href="index.html">Foodieland<span>.</span></a>
+        </div>
+        <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="recipe.html">Recipes</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="blog-post.html">About us</a></li> 
+</ul>
+
+            <div class="nav-social">
+             <a href="#"><img src="assets/images/home/001-facebook.svg" alt="f"></a>
+             <a href="#"><img src="assets/images/home/003-twitter.svg" alt="t"></a>
+             <a href="#"><img src="assets/images/home/004-instagram.svg" alt="i"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="ct-contact-section">
+    <div class="ct-container">
+        <h1 class="ct-main-title">Contact us</h1>
+
+        <div class="ct-grid">
+            <div class="ct-image-wrapper">
+                <img src="assets/images/contact page/Group 13936.svg" alt="Chef" class="ct-chef-img">
+            </div>
+
+            <div class="ct-form-wrapper">
+                <form id="contactForm" class="ct-form">
+                    
+                    <div class="ct-form-row">
+                        <div class="ct-input-group">
+                            <label>NAME</label>
+                            <input type="text" placeholder="Enter your name...">
+                        </div>
+                        <div class="ct-input-group">
+                            <label>EMAIL ADDRESS</label>
+                            <input type="email" placeholder="Your email address...">
+                        </div>
+                    </div>
+
+                    <div class="ct-form-row">
+                        <div class="ct-input-group">
+                            <label>SUBJECT</label>
+                            <input type="text" placeholder="Enter subject...">
+                        </div>
+                        <div class="ct-input-group">
+                            <label>ENQUIRY TYPE</label>
+                            <div class="ct-select-wrapper">
+                                <select>
+                                    <option value="advertising">Advertising</option>
+                                    <option value="support">Support</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ct-input-group full-width">
+                        <label>MESSAGES</label>
+                        <textarea placeholder="Enter your messages..."></textarea>
+                    </div>
+
+                    <div class="ct-button-wrapper">
+                        <button type="submit" class="ct-submit-btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="shared-newsletter">
+    <div class="ct-container"> 
+        <div class="newsletter-card">
+            
+            <img src="assets/images/home/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png" alt="" class="newsletter-img-left">
+            <img src="assets/images/home/Photo.png" alt="" class="newsletter-img-right">
+
+            <div class="newsletter-content">
+                <h2>Deliciousness to your inbox</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address..." required>
+                    <button type="submit" class="newsletter-subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="bp-recommendations">
+    <div class="bp-container">
+        <h2 class="bp-rec-title">Check out the delicious recipe</h2>
+        
+        <div class="bp-recipe-grid">
+            <div class="bp-recipe-card">
+                <div class="bp-card-image">
+                    <img src="assets/images/home/Mask Group (9).png" alt="Recipe 1">
+                    <button class="bp-heart-btn" onclick="toggleHeart(this)">
+                        <img src="assets/images/home/Group 852.svg" alt="heart" class="heart-icon">
+                    </button>
+                </div>
+                <h3 class="bp-card-title">Mixed Tropical Fruit Salad with Superfood Boosts</h3>
+                <div class="bp-card-meta">
+                    <span><img src="assets/images/home/Timer.svg" alt=""> 30 Minutes</span>
+                    <span><img src="assets/images/home/ForkKnife.svg" alt=""> Healthy</span>
+                </div>
+            </div>
+
+            <div class="bp-recipe-card">
+                <div class="bp-card-image">
+                    <img src="assets/images/home/Mask Group (10).png" alt="Recipe 2">
+                    <button class="bp-heart-btn" onclick="toggleHeart(this)">
+                        <img src="assets/images/home/Group 852 (1).svg" alt="heart" class="heart-icon">
+                    </button>
+                </div>
+                <h3 class="bp-card-title">Big and Juicy Wagyu Beef Cheeseburger</h3>
+                <div class="bp-card-meta">
+                    <span><img src="assets/images/home/Timer.svg" alt=""> 30 Minutes</span>
+                    <span><img src="assets/images/home/ForkKnife.svg" alt=""> Western</span>
+                </div>
+            </div>
+
+            <div class="bp-recipe-card">
+                <div class="bp-card-image">
+                    <img src="assets/images/home/Mask Group (11).png" alt="Recipe 3">
+                    <button class="bp-heart-btn" onclick="toggleHeart(this)">
+                        <img src="assets/images/home/Group 852.svg" alt="heart" class="heart-icon">
+                    </button>
+                </div>
+                <h3 class="bp-card-title">Healthy Japanese Fried Rice with Asparagus</h3>
+                <div class="bp-card-meta">
+                    <span><img src="assets/images/home/Timer.svg" alt=""> 30 Minutes</span>
+                    <span><img src="assets/images/home/ForkKnife.svg" alt=""> Healthy</span>
+                </div>
+            </div>
+
+            <div class="bp-recipe-card">
+                <div class="bp-card-image">
+                    <img src="assets/images/home/Mask Group (12).png" alt="Recipe 4">
+                    <button class="bp-heart-btn" onclick="toggleHeart(this)">
+                        <img src="assets/images/home/Group 852 (1).svg" alt="heart" class="heart-icon">
+                    </button>
+                </div>
+                <h3 class="bp-card-title">Cauliflower Walnut Vegetarian Taco Meat</h3>
+                <div class="bp-card-meta">
+                    <span><img src="assets/images/home/Timer.svg" alt=""> 30 Minutes</span>
+                    <span><img src="assets/images/home/ForkKnife.svg" alt=""> Eastern</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+
+</body>
+<footer class="bp-footer">
+    <div class="bp-container">
+        <div class="bp-footer-top">
+            <div class="bp-footer-info">
+                <h2 class="bp-footer-logo">Foodieland<span>.</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+            </div>
+            <nav class="bp-footer-nav">
+                <a href="#">Recipes</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">About us</a>
+            </nav>
+        </div>
+        
+        <div class="bp-footer-bottom">
+            <p>© 2020 Flowbase. Powered by <span class="red-text">Webflow</span></p>
+            <div class="bp-footer-social">
+                <a href="#"><img src="assets/images/home/001-facebook.svg" alt="fb"></a>
+                <a href="#"><img src="assets/images/home/003-twitter.svg" alt="tw"></a>
+                <a href="#"><img src="assets/images/home/004-instagram.svg" alt="ig"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
