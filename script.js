@@ -1,3 +1,7 @@
+console.log("JS is working!");
+const hamburger = document.getElementById("hamburger-menu");
+console.log("Hamburger element:", hamburger);
+
 document.addEventListener('DOMContentLoaded', function() {
     
     const recipeBtn = document.getElementById('viewRecipesBtn');
@@ -118,4 +122,52 @@ document.addEventListener("DOMContentLoaded", function(){
 
     });
 
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.getElementById("hamburger-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", function(e) {
+            e.stopPropagation();
+            navLinks.classList.toggle("active");
+        });
+        document.addEventListener("click", function(e) {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const categoriesContainer = document.querySelector(".categories-grid");
+    
+    if (categoriesContainer) {
+        categoriesContainer.innerHTML = '<div class="loading-state" style="text-align: center; width: 100%; grid-column: 1/-1; padding: 20px; font-weight: 600; color: #666;">Loading categories (Server may take up to 60s to wake up)...</div>';
+        
+        fetch("https://foodieland-oq9b.onrender.com/api/categories")
+            .then(response => response.json())
+            .then(data => {
+                categoriesContainer.innerHTML = "";
+                
+                data.forEach(category => {
+                    const categoryCard = document.createElement("div");
+                    categoryCard.className = "category-card";
+                    
+                    categoryCard.innerHTML = `
+                        <div class="category-image">
+                            <img src="${category.image}" alt="${category.name}">
+                        </div>
+                        <p class="category-name">${category.name}</p>
+                    `;
+                    
+                    categoriesContainer.appendChild(categoryCard);
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching categories:", error);
+                categoriesContainer.innerHTML = '<div class="error-state" style="text-align: center; width: 100%; grid-column: 1/-1; color: #FF4A4A;">Failed to load categories. Please refresh the page.</div>';
+            });
+    }
 });

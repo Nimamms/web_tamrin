@@ -396,4 +396,40 @@
     .bp-newsletter-btn { border-radius: 15px; }
     .bp-decor { display: none; } 
 }
+@media screen and (max-width: 768px) {
+    .bp-content img, 
+    .bp-top-content-wrapper img, 
+    article img,
+    .main-post-image,
+    .post-content img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    
+    .bp-share-sidebar {
+        width: 100% !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        margin: 20px 0 !important;
+    }
+
+    .bp-content-main {
+        width: 100% !important;
+    }
+    .bp-recipe-grid, 
+    .related-recipes-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    .bp-card, 
+    .recipe-card {
+        width: 100% !important;
+    }
+}
 
